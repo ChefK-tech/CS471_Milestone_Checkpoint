@@ -1,0 +1,19 @@
+Kwon: Mainly found the adsb dataset for use in this project. Used the following website (adsb.lol) to find the dataset and downloaded the data from that website primarily using Claude’s help. There were troubles regarding finding a small enough dataset to work on that could be easily pulled and then pushed to the repository. As such, this dataset only uses flights that departed from the Colorado Springs airport area to limit the amount of flights. 
+Richey: Mainly worked on the QDA model to use on the dataset and deciding what the correct aircraft types would be. Considered multiple labels but due to the small amount of flights in the dataset only focused on the types of aircraft that were available in the limited data. Received a lot of help from Claude regarding what the best features were to implement and then on how to display the model for show.
+Witte: Helped clean the dataset that was downloaded and did some quick exploratory data analysis on the features of the data. Split the dataset into training (80%) and testing (20%) for use by the QDA model. Also worked with Richey on what features should train the QDA model to find what was informative.
+
+Completed Functionality: The current code is a very simple pipeline on downloading data from adsb.lol, split the dataset into training and testing, training a QDA aircraft type classifier, and then show how accurate it is using a confusion matrix. 
+Five Features:
+•	Altitude
+•	Ground Speed
+•	Vertical Rate
+•	Distance from KCOS
+•	Turn Rate
+It should display a png that shows the visual representation of the QDA model and then the confusion matrix. 
+
+Remaining Work: Instructor suggested running three separate models on the data (QDA, LDA, and SVM). All three models would have separate results as they are trained in separate ways which would help us decide which model would better cluster the separate flights. 
+Designing new features that can help distinguish the flights from each other and create more defined clusters to better predict which flights would work.
+Finetuning the different models to see which model operates best on adsb data and the different features.
+
+Document Statement:
+Received much help from Claude regarding how to both download and split the data from adsb.lol as well as how to visualize the qda model’s result. 
